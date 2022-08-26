@@ -13,9 +13,37 @@ code {
 }
 
 .Main {
-  background-color: blue;
+  background-color: #212E53;
+  color: white;
 }
 
 .Footer {
-  background-color: red;
+  background-color: #BB2020;
+  color: white;
 }
+
+.Heder {
+  background-color: #BB2020;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-size:20;
+}
+
+.Li {
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 22px;
+  padding: 10px; 
+  list-style-type: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* .CartWitget {
+  background-color: #212E53;
+  color: #BB2020;
+  margin: 10px;
+  padding: 10px;
+} */
+

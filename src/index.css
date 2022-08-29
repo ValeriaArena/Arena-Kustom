@@ -47,3 +47,16 @@ code {
   padding: 10px;
 } */
 
+.ImgInicioLogo {
+
+  border-radius: 50px;
+  width: 15%;
+ 
+}
+
+.Carrito {
+  background-Color:white;
+  border: black 5px solid;
+  text-Align: center
+}
+

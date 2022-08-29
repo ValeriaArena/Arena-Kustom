@@ -4,6 +4,7 @@ const NavBar = () => {
     return (
         <header className="Heder">
           <nav>
+          <img src="logo.jpg" className="ImgInicioLogo" alt="Prueba"/>
             <div>
               <ul className="Li">
                 <li><a style={{color: 'white'}} href="https://www.instagram.com/kustomburger/"> Nosotros</a></li>

@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import Main from './components/Main/ItemListContainer';
 import './index.css'
 
+
 const App = () => {
   return (
     <>

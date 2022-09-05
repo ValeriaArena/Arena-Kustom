@@ -1,3 +1,4 @@
+
 import Counter from "../Counter/ItemCount";
 
 const Main = (props) => {
@@ -7,7 +8,8 @@ const Main = (props) => {
             <h2> KUSTOM</h2> 
             <h3>{props.saludo} </h3>
 
-            <Counter stock='10' inicial='1'/>
+            <Counter stock='10' inicial='0' onAdd='Gracias por su compra' /> 
+            
 
         </main>
     )

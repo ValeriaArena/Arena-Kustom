@@ -1,4 +1,4 @@
-const CartWitget = () => {
+const CartWitget = (prop) => {
 
     return (
         <button>

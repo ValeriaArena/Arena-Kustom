@@ -26,16 +26,14 @@ import React, {useState} from 'react'
         count > 0 && setCount (count -1)
     };
 
-    const gracias = () => {
-        alert (prop.onAdd)
-    };
+    
 
     return (
         <div className='Carrito'>
             <button onClick={sumar}>Agregar</button>
             <button onClick={restar}>Quitar</button>
             <p style={{color:'black'}}>Total: {count} </p>
-            <button onClick={gracias} disabled={count === 0}>Ir al carrito</button>
+            <button onClick={prop.onAdd} disabled={count === 0}>Ir al carrito</button>
             
         </div>
     )

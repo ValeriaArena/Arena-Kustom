@@ -4,8 +4,17 @@ const NavBar = () => {
     return (
         <header className="Heder">
           <nav>
-          <img src="logo.jpg" className="ImgInicioLogo" alt="Prueba"/>
-            <div>
+            <div style={{backgroundColor: 'white'}}>
+              <img src="logo.jpg" className="ImgInicioLogo" alt="Prueba"/>
+              <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Nosotros</a></ul>
+              <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Productos</a></ul>
+              <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Información</a></ul>
+              <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Contacto</a></ul>
+            
+              <CartWitget/>
+
+            </div>
+            {/* <div>
               <ul className="Li">
                 <li><a style={{color: 'white'}} href="https://www.instagram.com/kustomburger/"> Nosotros</a></li>
                 <li><a style={{color: 'white'}} href="https://www.instagram.com/kustomburger/"> Productos</a></li>
@@ -17,10 +26,7 @@ const NavBar = () => {
                 </li> 
                 <li><a style={{color: 'white'}} href="https://www.instagram.com/kustomburger/"> Contacto</a></li>
                </ul>
-            </div>
-            <div>
-              <CartWitget/>
-            </div>
+            </div> */}
           </nav>
         </header> 
     )

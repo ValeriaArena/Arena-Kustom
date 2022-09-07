@@ -20,13 +20,17 @@ code {
 .Footer {
   background-color: #BB2020;
   color: white;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  font-size:25px;
 }
 
 .Heder {
-  background-color: #BB2020;
+  background-color: white;
   font-weight: 700;
   font-family: 'Montserrat';
-  font-size:20;
+  font-size:25px;
+  border: #BB2020 5px solid;
 }
 
 .Li {
@@ -48,15 +52,37 @@ code {
 } */
 
 .ImgInicioLogo {
-
+  margin: 40px 40px 0px 40px;
   border-radius: 50px;
   width: 15%;
  
 }
 
+
 .Carrito {
   background-Color:white;
   border: black 5px solid;
-  text-Align: center
+  text-Align: center;
+  margin: 30px 300px 50px 300px;
+  padding: 5px 0px 5px 0px;
 }
 
+.ImgProductos {
+  margin: 20px;
+  width: 45%;
+ 
+}
+
+.cardProductos{
+  background-color: #BB2020;
+  width: 45%;
+  text-Align: center;
+  margin: 20px;
+}
+
+.tituloProducto {
+  color: #212E53;
+  text-transform: uppercase;
+  padding-top: 20px;
+  
+}

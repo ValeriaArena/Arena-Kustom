@@ -6,7 +6,7 @@ import ItemDetail from "./ItemDetail";
 
 const MainDetalle = (props) => {
     
-    const [product, setProduct] = useState([]);
+    const [product, setProduct] = useState({});
 
     useEffect (() => {
         //Promise
@@ -28,7 +28,7 @@ const MainDetalle = (props) => {
             }); */
     }, []);  
 
-    console.log(product)
+    console.log( 'hola',  product)
 
    /*  function gracias() {
         alert('Gracias por su compra');
@@ -37,7 +37,8 @@ const MainDetalle = (props) => {
     return (
         <main className="Main">
             <h1> Detalle del producto </h1> 
-             <ItemDetail product={product} /> 
+
+              <ItemDetail product={product} />  
              
             {/* <ItemList product={product} /> */}
             {/* <Counter stock='10' inicial='0' onAdd= {gracias}/> */}

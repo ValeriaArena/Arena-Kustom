@@ -1,6 +1,5 @@
 import { producto } from "../../mock/productos";
 import { useState, useEffect } from "react";
-//import Counter from "../Counter/ItemCount";
 import ItemDetail from "./ItemDetail";
 
 
@@ -30,18 +29,13 @@ const MainDetalle = (props) => {
 
     console.log( 'hola',  product)
 
-   /*  function gracias() {
-        alert('Gracias por su compra');
-    } */
+ 
 
     return (
         <main className="Main">
             <h1> Detalle del producto </h1> 
-
-              <ItemDetail product={product} />  
+            <ItemDetail product={product} />  
              
-            {/* <ItemList product={product} /> */}
-            {/* <Counter stock='10' inicial='0' onAdd= {gracias}/> */}
         </main>
     )
 }

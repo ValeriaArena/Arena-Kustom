@@ -86,3 +86,10 @@ code {
   padding-top: 20px;
   
 }
+
+.cardProducto{
+  background-color: white;
+  width: 45%;
+  text-Align: center;
+  margin: 20px;
+}

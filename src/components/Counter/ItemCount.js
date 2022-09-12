@@ -29,7 +29,7 @@ import React, {useState} from 'react'
     
 
     return (
-        <div className='Carrito'>
+        <div >
             <button onClick={sumar}>Agregar</button>
             <button onClick={restar}>Quitar</button>
             <p style={{color:'black'}}>Total: {count} </p>

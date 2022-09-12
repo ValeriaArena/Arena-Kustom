@@ -1,11 +1,10 @@
-
-import { productos } from "../../mock/productos";
+import { producto } from "../../mock/productos";
 import { useState, useEffect } from "react";
 //import Counter from "../Counter/ItemCount";
-import ItemList from "./ItemList";
+import ItemDetail from "./ItemDetail";
 
 
-const Main = (props) => {
+const MainDetalle = (props) => {
     
     const [product, setProduct] = useState([]);
 
@@ -13,7 +12,7 @@ const Main = (props) => {
         //Promise
         const getProduct = new Promise ((resolve,rejest) => {
             setTimeout(() => {
-            resolve(productos);
+            resolve(producto);
             }, 2000);
         });
 
@@ -37,12 +36,13 @@ const Main = (props) => {
 
     return (
         <main className="Main">
-            <h1> KUSTOM </h1> 
-            <h3>{props.saludo} </h3>
-            <ItemList product={product} />
+            <h1> Detalle del producto </h1> 
+             <ItemDetail product={product} /> 
+             
+            {/* <ItemList product={product} /> */}
             {/* <Counter stock='10' inicial='0' onAdd= {gracias}/> */}
         </main>
     )
 }
 
-export default Main
+export default MainDetalle

@@ -31,3 +31,12 @@ export const productos = [
     }
 ]
 
+export const producto = {
+        id:0,
+        title: 'Krispy',
+        description: 'Doble carne, doble cheddar, panceta y cebolla crocante.',
+        price: 900,
+        stock: 10,
+        category: 'hamburguesas',
+        img: 'Krispy.jpeg',
+}

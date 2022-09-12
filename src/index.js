@@ -4,6 +4,7 @@ import NavBar from './components/Header/NavBar';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/ItemListContainer';
 import './index.css'
+import MainDetalle from './components/Main/ItemDetailContainer';
 
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <>
       <NavBar />
       <Main saludo="Bienvenidos a mi futura App"/>
+      <MainDetalle/>
       <Footer />
     </>
   )

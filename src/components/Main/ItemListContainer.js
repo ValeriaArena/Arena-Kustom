@@ -1,13 +1,18 @@
 
 import { productos } from "../../mock/productos";
 import { useState, useEffect } from "react";
+//import { useParams } from "react-router-dom";
 //import Counter from "../Counter/ItemCount";
 import ItemList from "./ItemList";
 
 
-const Main = (props) => {
+const ItemListContainer = (props) => {
     
     const [product, setProduct] = useState([]);
+
+    //const parametroURL = useParams ()
+    //console.log ( 'parametro', parametroURL.categoryId)
+    //const {categoryId} = useParams
 
     useEffect (() => {
         //Promise
@@ -45,4 +50,4 @@ const Main = (props) => {
     )
 }
 
-export default Main
+export default ItemListContainer

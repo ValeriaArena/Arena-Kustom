@@ -2,19 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import NavBar from './components/Header/NavBar';
 import Footer from './components/Footer/Footer';
-import Main from './components/Main/ItemListContainer';
+import ItemListContainer from './components/Main/ItemListContainer';
 import './index.css'
-import MainDetalle from './components/Main/ItemDetailContainer';
-
+import ItemDetailContainer from './components/Main/ItemDetailContainer';
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 const App = () => {
   return (
-    <>
+    <BrowserRouter>
       <NavBar />
-      <Main saludo="Bienvenidos a mi futura App"/>
-      <MainDetalle/>
+      <Routes>
+        <Route path='/' element={<ItemListContainer saludo="Bienvenidos a mi futura App"/>} />
+        <Route path='/category/:categoryId' element={<ItemListContainer />} />
+        <Route path='/Item/:id' element={<ItemDetailContainer/>} />
+      </Routes>  
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));

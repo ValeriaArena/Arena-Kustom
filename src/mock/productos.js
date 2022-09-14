@@ -1,6 +1,6 @@
 export const productos = [
     {
-        id:1,
+        id:'1',
         title: 'Krispy',
         description: 'Doble carne, doble cheddar, panceta y cebolla crocante.',
         price: 900,
@@ -10,7 +10,7 @@ export const productos = [
 
     },
     {
-        id:2,
+        id:'2',
         title: 'American',
         description: 'Doble carne, doble cheddar, lechuga, tomate y cebolla.',
         price: 700,
@@ -20,7 +20,7 @@ export const productos = [
 
     },
     {
-        id:3,
+        id:'3',
         title: 'Cuarto',
         description: 'Doble carne, doble cheddar, cebolla picada, pepino y ketchup.',
         price: 800,

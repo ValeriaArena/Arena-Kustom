@@ -6,7 +6,7 @@ const ItemList = (prop) =>{
     return <div>
         {prop.product.map ((producto) => {
             return (
-                <Item producto={producto}/>
+                <Item producto={producto} />
                
             )})
         }    </div>

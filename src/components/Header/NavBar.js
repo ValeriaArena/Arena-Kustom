@@ -1,15 +1,19 @@
 import CartWitget from "./CartWidget"
+import { Link } from "react-router-dom"
 
 const NavBar = () => {
     return (
         <header className="Heder">
           <nav>
             <div style={{backgroundColor: 'white'}}>
-              <img src="logo.jpg" className="ImgInicioLogo" alt="Prueba"/>
-              <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Nosotros</a></ul>
+              <Link to='/'><img src="logo.jpg" className="ImgInicioLogo" alt="Logo"/></Link>
+              <Link to="/category/productos" className="Li" style={{color: '#212E53'}}>Productos </Link>
+              <Link to="/item/detalle" className="Li" style={{color: '#212E53'}}>Detalle </Link>
+              <Link to="/" className="Li" style={{color: '#212E53'}}>Contacto </Link>
+{/*           <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Nosotros</a></ul>
               <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Productos</a></ul>
-              <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Información</a></ul>
-              <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Contacto</a></ul>
+              <ul className="Li" style={{color: '#212E53'}} ><a href="http://localhost:3000/category/:id"> Detalle</a></ul>
+              <ul className="Li" style={{color: '#212E53'}} ><a href="https://www.instagram.com/kustomburger/"> Contacto</a></ul> */}
             
               <CartWitget/>
 

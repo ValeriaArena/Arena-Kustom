@@ -1,11 +1,16 @@
 import { producto } from "../../mock/productos";
 import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
 
 
-const MainDetalle = (props) => {
+const ItemDetailContainer = (props) => {
     
     const [product, setProduct] = useState({});
+
+    const parametroURL = useParams ()
+    console.log ( 'parametro', parametroURL)
+    //const {categoryId} = useParams
 
     useEffect (() => {
         //Promise
@@ -40,4 +45,4 @@ const MainDetalle = (props) => {
     )
 }
 
-export default MainDetalle
+export default ItemDetailContainer

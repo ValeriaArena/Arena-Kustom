@@ -1,7 +1,7 @@
 
 import { productos } from "../../mock/productos";
 import { useState, useEffect } from "react";
-//import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 //import Counter from "../Counter/ItemCount";
 import ItemList from "./ItemList";
 
@@ -12,10 +12,26 @@ const ItemListContainer = (props) => {
 
     //const parametroURL = useParams ()
     //console.log ( 'parametro', parametroURL.categoryId)
-    //const {categoryId} = useParams
+    const {categoryId} = useParams ()
+    console.log ('ver', categoryId)
 
     useEffect (() => {
-        //Promise
+        if (categoryId) {
+            const getProduct = new Promise ((resolve,rejest) => {
+                const prodFiltrado = productos.filter ( (prod) => prod.category === categoryId)
+                setTimeout(() => {
+                resolve(prodFiltrado);
+                }, 2000);
+            });
+    
+            getProduct.then ((data) => {
+                setProduct(data);
+            })
+             //en caso de 'rejest'
+                .catch ((error) => {
+                console.log ('catch: ', error) })
+        } else {
+                    //Promise
         const getProduct = new Promise ((resolve,rejest) => {
             setTimeout(() => {
             resolve(productos);
@@ -32,7 +48,10 @@ const ItemListContainer = (props) => {
             .finally(() => {
                 console.log ('Terminé');
             }); */
-    }, []);  
+        }
+    }, [categoryId]);
+        
+  
 
     console.log(product)
 

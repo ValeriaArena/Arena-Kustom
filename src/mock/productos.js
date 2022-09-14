@@ -28,6 +28,17 @@ export const productos = [
         category: 'hamburguesas',
         img: 'cuartoManos.jpeg',
 
+    },
+
+    {
+        id:'4',
+        title: 'Papas fritas',
+        description: 'Unas crocantes papas fritas',
+        price: 400,
+        stock: 10,
+        category: 'papas',
+        img: 'papasFritas.jpeg',
+
     }
 ]
 

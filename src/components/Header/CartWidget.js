@@ -1,12 +1,13 @@
-const CartWitget = (prop) => {
+
+import React from "react"
+
+const CartWidget = () => {
 
     return (
-        <button>
-            <span style={{margin: '10px', padding:'10px', color:'#BB2020', backgroundColor:'#212E53', fontSize:'50px'}} className="material-symbols-outlined" > shopping_cart</span>
-        </button>
-    )
+         <span style={{margin: '10px', padding:'10px', color:'#BB2020', backgroundColor:'#212E53', fontSize:'40px'}} className="material-symbols-outlined" > shopping_cart</span> 
+    );   
 }
 
-export default CartWitget
+export default CartWidget
 
 

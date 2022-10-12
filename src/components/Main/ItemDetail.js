@@ -1,19 +1,25 @@
- import React from 'react'
+ import React from 'react';
+import {useState} from 'react';
  import Counter from "../Counter/ItemCount";
 
- function gracias() {
-    alert('Gracias por su compra');
-} 
+
 
  const ItemDetail = (prop) =>{
+    const [cantidad, setCantidad] = useState(0);
+
+    const onAdd = (cantidad) => {
+        setCantidad(cantidad)
+        console.log (cantidad)
+    };
+
     return (
-         <div key={prop.product.id}>
+         <div style={{ display: "flex", justifyContent: "center"}} key={prop.product.id}>
                 <div className='cardProductos' >
                     <h2 className='tituloProducto'>{prop.product.title}</h2>
                     <h3>$ {prop.product.price}</h3>
                     <p>{prop.product.description}</p>
                     <img src={prop.product.img} className="ImgProductos" alt={prop.product.title}/>
-                    <Counter stock='10' inicial='0' onAdd= {gracias}/>
+                    <Counter stock={prop.product.stock} inicial={0} onAdd= {onAdd}/>
                 </div>
             </div> 
     )}

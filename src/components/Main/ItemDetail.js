@@ -7,11 +7,11 @@ import { Link } from 'react-router-dom';
 
  const ItemDetail = (prop) =>{
     const [cantidad, setCantidad] = useState(0);
-    const {cart, addToCart} = useContext (CartContext)
+    const {cart, addToCart} = useContext (CartContext);
 
     const onAdd = (cantidadItem) => {
-        setCantidad(cantidadItem)
-        addToCart(prop, cantidadItem)
+        setCantidad(cantidadItem);
+        addToCart(prop, cantidadItem);
         
     };
 
@@ -27,11 +27,20 @@ import { Link } from 'react-router-dom';
                     {cantidad === 0 ? (
                     <Counter stock={prop.product.stock} inicial={0} onAdd= {onAdd}/>
                     ) : (
-                        <Link to="/cart">Ir al carrito</Link>
+                            <div>
+                                <Link to="/cart">
+                                    <button>Ir al carrito</button>
+                                </Link>
+                                <Link to="/productos">
+                                    <button>Seguir comprando</button>
+                                </Link> 
+                        </div>
+                        
                     )}
                 </div>
             </div> 
-    )}
+    );
+};
 
 
 export default ItemDetail   

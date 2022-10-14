@@ -16,6 +16,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path='/' element={<ItemListContainer saludo="Bienvenidos a mi futura App"/>} />
+        <Route path='/productos' element={<ItemListContainer />} />
         <Route path='/category/:categoryId' element={<ItemListContainer />} />
         <Route path='/item/:id' element={<ItemDetailContainer/>} />
         <Route path='/Cart' element={<Cart/>} />

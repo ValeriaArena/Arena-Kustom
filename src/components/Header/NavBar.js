@@ -8,7 +8,7 @@ const NavBar = () => {
           <nav>
             <div style={{backgroundColor: 'white'}}>
               <Link to='/'><img src="logo.jpg" className="ImgInicioLogo" alt="Logo"/></Link>
-              <Link to="/" className="Li" style={{color: '#212E53'}}>Productos </Link>
+              <Link to="/productos" className="Li" style={{color: '#212E53'}}>Productos </Link>
               <Link to="/category/hamburguesas" className="Li" style={{color: '#212E53'}}>Hamburguesas </Link>
               <Link to="/category/papas" className="Li" style={{color: '#212E53'}}>Papas </Link>
               <Link to="/Cart"><CartWidget /></Link>

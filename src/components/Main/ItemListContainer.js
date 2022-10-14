@@ -13,7 +13,7 @@ const ItemListContainer = (props) => {
     //const parametroURL = useParams ()
     //console.log ( 'parametro', parametroURL.categoryId)
     const {categoryId} = useParams ()
-    console.log ('ver', categoryId)
+   // console.log ('ver', categoryId)
 
     useEffect (() => {
         if (categoryId) {
@@ -53,7 +53,7 @@ const ItemListContainer = (props) => {
         
   
 
-    console.log(product)
+   // console.log(product)
 
    /*  function gracias() {
         alert('Gracias por su compra');
